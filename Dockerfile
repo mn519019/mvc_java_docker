@@ -4,7 +4,7 @@ LABEL maintainer="my931uow@gmail.com"
 
 WORKDIR /usr/app
 
-COPY target/MyFirstJavaProject-0.0.1-SNAPSHOT.jar app.jar
+COPY target/Java-App-1.0.0.jar app.jar
 
 EXPOSE 8080
 
