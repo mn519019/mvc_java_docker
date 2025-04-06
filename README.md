@@ -1,6 +1,20 @@
-# Process to deploy the code to docker
-  docker build -t docker_desktop_page .
-  docker images ls
-  docker build -t docker_desktop_page .
-  docker tag docker_desktop_page:latest rickyang/my-java-app:v1.0.0
-  docker run -p 8080:8080 rickyang/my-java-app:v3.0.0
+# Java Application Build
+- This repo will explore how to build a java-based container image and deploy it as a container
+
+## Requirements
+- git
+- maven
+- docker
+
+## Commands 
+```
+mvn clean install
+docker build -t java_app .
+docker images ls
+docker tag java_app:latest rickyang/java-app:v1.0.0
+docker run -p 8080:8080 rickyang/java-app:v1.0.0
+```
+
+
+# Medium Blog
+- https://medium.com/@my931uow/docker-to-build-java-application-a4e4529bab78
